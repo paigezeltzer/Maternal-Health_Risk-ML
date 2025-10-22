@@ -49,34 +49,54 @@ The target variable `RiskLevel`, categorized as:
 After running the script, the following folders will be created:
 
 datasets/
-│ ├── random_forest_X_train.csv
-│ ├── random_forest_y_test.csv
-│ └── ...
-metrics/
-│ ├── Random_Forest_metrics.csv
-│ ├── Gradient_Boosting_metrics.csv
-│ └── ...
-classification/
-│ ├── Random_Forest_classification_report.csv
-│ └── ...
-confusion_matrix/
-│ ├── Random_Forest_confusion_matrix.csv
-│ ├── Random_Forest_confusion_matrix.png
-│ └── ...
-roc/
-│ ├── Random_Forest_ROC_curve.png
-│ └── ...
+├── random_forest_X_train.csv
+├── random_forest_X_test.csv
+├── random_forest_y_train.csv
+├── random_forest_y_test.csv
+└── ... (other models)
 
-## 🧠 Models Implemented
-| Model | Library | Description |
-|-------|----------|-------------|
-| Random Forest | sklearn.ensemble | Strong baseline for tabular data |
-| Gradient Boosting | sklearn.ensemble | Sequential tree boosting |
-| XGBoost | xgboost | Efficient gradient boosting implementation |
-| LightGBM | lightgbm | Fast, memory-efficient tree boosting |
-| CatBoost | catboost | Handles categorical data well |
-| Neural Network (MLP) | sklearn.neural_network | Simple feedforward neural network |
-| Logistic Regression | sklearn.linear_model | Interpretable baseline model |
+metrics/
+├── Random_Forest_metrics.csv
+├── Gradient_Boosting_metrics.csv
+├── XGBoost_metrics.csv
+├── LightGBM_metrics.csv
+├── CatBoost_metrics.csv
+├── Neural_Network_metrics.csv
+└── Logistic_Regression_metrics.csv
+
+classification/
+├── Random_Forest_classification_report.csv
+├── Gradient_Boosting_classification_report.csv
+├── XGBoost_classification_report.csv
+├── LightGBM_classification_report.csv
+├── CatBoost_classification_report.csv
+├── Neural_Network_classification_report.csv
+└── Logistic_Regression_classification_report.csv
+
+confusion_matrix/
+├── Random_Forest_confusion_matrix.csv
+├── Random_Forest_confusion_matrix.png
+├── Gradient_Boosting_confusion_matrix.csv
+├── Gradient_Boosting_confusion_matrix.png
+├── XGBoost_confusion_matrix.csv
+├── XGBoost_confusion_matrix.png
+├── LightGBM_confusion_matrix.csv
+├── LightGBM_confusion_matrix.png
+├── CatBoost_confusion_matrix.csv
+├── CatBoost_confusion_matrix.png
+├── Neural_Network_confusion_matrix.csv
+├── Neural_Network_confusion_matrix.png
+├── Logistic_Regression_confusion_matrix.csv
+└── Logistic_Regression_confusion_matrix.png
+
+roc/
+├── Random_Forest_ROC_curve.png
+├── Gradient_Boosting_ROC_curve.png
+├── XGBoost_ROC_curve.png
+├── LightGBM_ROC_curve.png
+├── CatBoost_ROC_curve.png
+├── Neural_Network_ROC_curve.png
+└── Logistic_Regression_ROC_curve.png
 
 ## 🧩 Key Functions
 ### `save_datasets(X_train, X_test, y_train, y_test, model_name)`
