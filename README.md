@@ -89,7 +89,6 @@ Computes and prints performance metrics, then saves:
 
 ### `plot_confusion_matrix(y_true, y_pred, model_name)`
 Creates a confusion matrix heatmap and saves:
-- `confusion_matrix/{model_name}_confusion_matrix.csv`
 - `confusion_matrix/{model_name}_confusion_matrix.png`
 
 ### `plot_roc_curve(y_true, y_proba, model_name)`
